@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layanan Kami | DHTM Studio</title>
+<meta name="description" content="Jasa Desain 3D dan 3D Printing Profesional - DHTM Studio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/Style.css">
+<link rel="stylesheet" href="CSS/product.css">
+<link rel="icon" href="img/logo-transparent-removebg-preview.png">
+</head>
+<body>
+<canvas id="particle-bg"></canvas>
+<div class="mesh-grid"></div>
+<div class="noise"></div>
+<button id="backTop">
+↑
+</button>
+<div id="scroll-progress"></div>
+
+
+<!-- =====================================================
+HEADER (identik dengan Home)
+===================================================== -->
+<header>
+<div class="container">
+<div class="nav-wrapper">
+<a href="index.html" class="nav-logo page-link">
+<img src="img/logo-transparent.png" loading="lazy" decoding="async" alt="Logo DHTM Studio">
+<span>DHTM Studio</span>
+</a>
+<nav>
+<ul>
+<li><a href="index.html" class="page-link">Beranda</a></li>
+<li><a href="#bantuan">Layanan</a></li>
+<li><a href="#alur">Alur Kerja</a></li>
+<li><a href="index.html#kontak" class="page-link">Kontak</a></li>
+</ul>
+</nav>
+<button id="navToggle" class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</header>
+
+<main class="product-page">
+
+<!-- =====================================================
+HERO
+===================================================== -->
+<section class="service-hero">
+<div class="container">
+<div class="service-hero-content fade-up">
+<span class="eyebrow">Jasa Desain 3D &amp; 3D Printing</span>
+<h1>Layanan DHTM Studio</h1>
+<p>
+Dari ide sederhana hingga produk fisik, kami membantu Anda dalam proses
+desain 3D, modifikasi model, hingga pencetakan berkualitas tinggi.
+</p>
+<div class="service-hero-buttons">
+<a href="index.html#kontak" class="btn btn-solid page-link">Konsultasi Sekarang</a>
+<a href="#layanan-kami" class="btn">Lihat Layanan</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+APA YANG BISA KAMI BANTU
+===================================================== -->
+<section id="bantuan">
+<div class="container">
+<div class="section-heading fade-up">
+<span class="eyebrow">Mulai Dari Mana Saja</span>
+<h2>Apa yang Bisa Kami Bantu?</h2>
+<p>Apapun titik awalmu, kami bisa bantu lanjutkan sampai jadi produk.</p>
+</div>
+<div class="help-grid">
+
+<div class="help-card fade-up">
+<span class="help-icon">💡</span>
+<h3>Saya hanya punya ide</h3>
+<p>Kami membantu mengubah ide menjadi model 3D yang siap diproduksi.</p>
+</div>
+
+<div class="help-card fade-up">
+<span class="help-icon">📷</span>
+<h3>Saya hanya punya foto</h3>
+<p>Model dapat dibuat berdasarkan referensi foto yang Anda miliki.</p>
+</div>
+
+<div class="help-card fade-up">
+<span class="help-icon">🔧</span>
+<h3>Saya memiliki komponen yang rusak</h3>
+<p>Kami mendesain ulang komponen agar dapat dicetak kembali.</p>
+</div>
+
+<div class="help-card fade-up">
+<span class="help-icon">📄</span>
+<h3>Saya sudah punya file STL</h3>
+<p>File siap langsung dicetak menggunakan material pilihan.</p>
+</div>
+
+<div class="help-card fade-up">
+<span class="help-icon">✏️</span>
+<h3>Saya ingin mengubah file STL</h3>
+<p>Modifikasi ukuran, bentuk, maupun fungsi sebelum dicetak.</p>
+</div>
+
+<div class="help-card fade-up">
+<span class="help-icon">📦</span>
+<h3>Saya ingin desain sekaligus print</h3>
+<p>Kami menangani seluruh proses dari desain hingga produk selesai.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+LAYANAN KAMI
+===================================================== -->
+<section id="layanan-kami">
+<div class="container">
+<div class="section-heading fade-up">
+<span class="eyebrow">Pilihan Layanan</span>
+<h2>Layanan Kami</h2>
+<p>Dua layanan utama yang bisa berdiri sendiri atau digabung sesuai kebutuhanmu.</p>
+</div>
+<div class="service-grid">
+
+<div class="service-card fade-up">
+<div class="service-icon">✏️</div>
+<h3>Jasa Desain 3D</h3>
+<ul class="service-list">
+<li>Desain dari nol</li>
+<li>Reverse Engineering</li>
+<li>Modifikasi Model</li>
+<li>Optimasi untuk 3D Printing</li>
+</ul>
+<span class="service-subtitle">Format File</span>
+<ul class="service-list">
+<li>STL</li>
+<li>STEP</li>
+<li>OBJ</li>
+</ul>
+<a href="index.html#kontak" class="btn btn-solid page-link">Pelajari Lebih Lanjut</a>
+</div>
+
+<div class="service-card fade-up">
+<div class="service-icon">🖨️</div>
+<h3>Jasa 3D Printing</h3>
+<span class="service-subtitle">Material</span>
+<ul class="service-list">
+<li>PLA</li>
+<li>PETG</li>
+<li>ABS</li>
+<li>ASA</li>
+<li>TPU</li>
+</ul>
+<span class="service-subtitle">Kualitas Layer</span>
+<ul class="service-list">
+<li>Draft</li>
+<li>Standar</li>
+<li>High Detail</li>
+</ul>
+<a href="index.html#kontak" class="btn btn-solid page-link">Pelajari Lebih Lanjut</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+ALUR PENGERJAAN
+===================================================== -->
+<section id="alur">
+<div class="container">
+<div class="section-heading fade-up">
+<span class="eyebrow">Proses Kerja</span>
+<h2>Alur Pengerjaan</h2>
+<p>Transparan dari awal konsultasi sampai produk sampai di tanganmu.</p>
+</div>
+<div class="timeline">
+
+<div class="timeline-step">
+<div class="step-dot">1</div>
+<h4>Konsultasi</h4>
+<p>Ceritakan kebutuhanmu ke tim kami.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">2</div>
+<h4>Penawaran Harga</h4>
+<p>Estimasi biaya &amp; waktu pengerjaan.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">3</div>
+<h4>Desain / Persiapan File</h4>
+<p>Model 3D disiapkan sesuai kebutuhan.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">4</div>
+<h4>Revisi</h4>
+<p>Jika diperlukan penyesuaian.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">5</div>
+<h4>Proses 3D Printing</h4>
+<p>Produk mulai dicetak.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">6</div>
+<h4>Quality Check</h4>
+<p>Pengecekan kualitas hasil cetak.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step-dot">7</div>
+<h4>Produk Dikirim</h4>
+<p>Siap dikirim ke tanganmu.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+MENGAPA MEMILIH DHTM STUDIO
+===================================================== -->
+<section id="mengapa">
+<div class="container">
+<div class="section-heading fade-up">
+<span class="eyebrow">Kelebihan Kami</span>
+<h2>Mengapa Memilih DHTM Studio?</h2>
+</div>
+<div class="why-grid">
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Presisi Tinggi</span>
+</div>
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Material Berkualitas</span>
+</div>
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Konsultasi Gratis</span>
+</div>
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Desain Custom</span>
+</div>
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Harga Transparan</span>
+</div>
+
+<div class="why-item fade-up">
+<span class="why-check">✔</span>
+<span class="why-label">Respon Cepat</span>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- =====================================================
+CTA
+===================================================== -->
+<section>
+<div class="container">
+<div class="cta-glass fade-up">
+<h2>Punya ide yang ingin diwujudkan?</h2>
+<p>Ceritakan kebutuhan Anda. Kami akan membantu mulai dari desain hingga produk selesai.</p>
+<a href="index.html#kontak" class="btn btn-solid page-link">Hubungi Kami</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- =====================================================
+FOOTER (identik dengan Home)
+===================================================== -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<img
+src="img/logo-transparent.png"
+loading="lazy"
+decoding="async"
+alt="logo"
+>
+<h2>DHTM Studio</h2>
+<p>Build Beyond Imagination</p>
+</div>
+<div class="footer-menu">
+<h3>Menu</h3>
+<a href="index.html#beranda">Beranda</a>
+<a href="index.html#tentang">Tentang</a>
+<a href="index.html#produk">Produk</a>
+<a href="index.html#galeri">Galeri</a>
+<a href="index.html#kontak">Kontak</a>
+</div>
+<div class="footer-social">
+<h3>Follow</h3>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">TikTok</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 DHTM Studio All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+<script src="JSC/Script.js"></script>
+<script src="JSC/product.js"></script>
+</body>
+</html>
